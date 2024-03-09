@@ -2,7 +2,6 @@ package com.demo.notesapp.mapper;
 
 import com.demo.notesapp.dto.NoteDTO;
 import com.demo.notesapp.model.Note;
-import java.sql.Timestamp;
 import java.util.List;
 import lombok.experimental.UtilityClass;
 
@@ -12,7 +11,7 @@ public class NoteMapper {
     public static Note mapToEntity(NoteDTO noteDTO) {
         Note note = new Note();
         note.setId(noteDTO.getId());
-        note.setUserId(Math.toIntExact(noteDTO.getUserId()));
+        note.getUser().setId(noteDTO.getUserId());
         note.setTitle(noteDTO.getTitle());
         note.setContent(noteDTO.getContent());
         note.setArchived(noteDTO.getArchived());
@@ -22,7 +21,7 @@ public class NoteMapper {
     public static NoteDTO mapToDTO(Note note) {
         com.demo.notesapp.dto.NoteDTO noteDTO = new com.demo.notesapp.dto.NoteDTO();
         noteDTO.setId(note.getId());
-        noteDTO.setUserId(Long.valueOf(note.getUserId()));
+        noteDTO.setUserId(note.getUser().getId());
         noteDTO.setTitle(note.getTitle());
         noteDTO.setContent(note.getContent());
         noteDTO.setArchived(note.getArchived());

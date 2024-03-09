@@ -1,7 +1,7 @@
 package com.demo.notesapp.mapper;
 
-import com.demo.notesapp.model.User;
 import com.demo.notesapp.dto.UserDTO;
+import com.demo.notesapp.model.User;
 import java.util.List;
 import lombok.experimental.UtilityClass;
 

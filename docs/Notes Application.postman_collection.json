@@ -10,7 +10,7 @@
 			"name": "Users",
 			"item": [
 				{
-					"name": "Get All",
+					"name": "Get All Users",
 					"request": {
 						"method": "GET",
 						"header": [],
@@ -28,7 +28,7 @@
 					"response": []
 				},
 				{
-					"name": "Get By Id",
+					"name": "Get User By Id",
 					"request": {
 						"method": "GET",
 						"header": [],
@@ -141,6 +141,440 @@
 								{
 									"key": "id",
 									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Notes",
+			"item": [
+				{
+					"name": "Get All Notes",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:50000/note",
+							"host": [
+								"localhost"
+							],
+							"port": "50000",
+							"path": [
+								"note"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Note By Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:50000/note/:id",
+							"host": [
+								"localhost"
+							],
+							"port": "50000",
+							"path": [
+								"note",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Notes",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"username\": \"test\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:50000/note",
+							"host": [
+								"localhost"
+							],
+							"port": "50000",
+							"path": [
+								"note"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Note",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"username\": \"test\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:50000/note/:id",
+							"host": [
+								"localhost"
+							],
+							"port": "50000",
+							"path": [
+								"note",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Note",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"username\": \"test\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:50000/note/:id",
+							"host": [
+								"localhost"
+							],
+							"port": "50000",
+							"path": [
+								"note",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Note Tags",
+			"item": [
+				{
+					"name": "Get All Note Tags",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:50000/note",
+							"host": [
+								"localhost"
+							],
+							"port": "50000",
+							"path": [
+								"note"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Note By Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:50000/note/:id",
+							"host": [
+								"localhost"
+							],
+							"port": "50000",
+							"path": [
+								"note",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Notes",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"username\": \"test\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:50000/note",
+							"host": [
+								"localhost"
+							],
+							"port": "50000",
+							"path": [
+								"note"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Note",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"username\": \"test\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:50000/note/:id",
+							"host": [
+								"localhost"
+							],
+							"port": "50000",
+							"path": [
+								"note",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Note",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"username\": \"test\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:50000/note-tag/:note-id/:note-tag-id",
+							"host": [
+								"localhost"
+							],
+							"port": "50000",
+							"path": [
+								"note-tag",
+								":note-id",
+								":note-tag-id"
+							],
+							"variable": [
+								{
+									"key": "note-id",
+									"value": "3"
+								},
+								{
+									"key": "note-tag-id",
+									"value": "3"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Tags",
+			"item": [
+				{
+					"name": "Get All Tags",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:50000/note",
+							"host": [
+								"localhost"
+							],
+							"port": "50000",
+							"path": [
+								"note"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Note By Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:50000/note/:id",
+							"host": [
+								"localhost"
+							],
+							"port": "50000",
+							"path": [
+								"note",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Notes",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"test\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:50000/tag",
+							"host": [
+								"localhost"
+							],
+							"port": "50000",
+							"path": [
+								"tag"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Note",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"username\": \"test\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:50000/note/:id",
+							"host": [
+								"localhost"
+							],
+							"port": "50000",
+							"path": [
+								"note",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Note",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"username\": \"test\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:50000/tag/:id",
+							"host": [
+								"localhost"
+							],
+							"port": "50000",
+							"path": [
+								"tag",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "6"
 								}
 							]
 						}

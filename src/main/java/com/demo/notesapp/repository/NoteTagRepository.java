@@ -3,9 +3,9 @@ package com.demo.notesapp.repository;
 import com.demo.notesapp.model.NoteTag;
 import com.demo.notesapp.model.NoteTagId;
 import org.springframework.data.repository.CrudRepository;
-import org.springframework.stereotype.Repository;
+import org.springframework.data.rest.core.annotation.RepositoryRestResource;
 
-@Repository
+@RepositoryRestResource
 public interface NoteTagRepository extends CrudRepository<NoteTag, NoteTagId> {
 
 }

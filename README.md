@@ -51,7 +51,8 @@ mvn spring-boot:run
 The application should now be running at http://localhost:50000.
 
 ## API Documentation
-A Postman collection is provided for testing the API endpoints. You can import this collection into your Postman application. If you're not familiar with how to do this, please refer to the [Postman documentation](./docs/Notes Application.postman_collection.json)..
+A Postman collection is provided for testing the API endpoints. You can import this collection into your Postman application. If you're not familiar with how to do this, please refer to the [Postman documentation](./docs/Notes%20Application.postman_collection.json).
 
 ## Database Schema
 The database schema is defined in the `schema.sql` file. This script is automatically executed when the Docker container is started, setting up the database and populating it with some initial data.
+![ER Diagram](./docs/ER-diagram.png)

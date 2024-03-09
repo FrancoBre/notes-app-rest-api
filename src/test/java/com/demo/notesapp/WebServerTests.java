@@ -1,10 +1,10 @@
-package com.knf.dev.demo.springbootjpamustachecrud;
+package com.demo.notesapp;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class SpringbootjpamustachecrudApplicationTests {
+class WebServerTests {
 
 	@Test
 	void contextLoads() {

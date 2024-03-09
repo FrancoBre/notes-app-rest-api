@@ -1,14 +1,14 @@
-package com.knf.dev.demo.springbootjpamustachecrud;
+package com.demo.notesapp;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class SpringbootjpamustachecrudApplication {
+public class WebServer {
 
 	public static void main(String[] args) {
 		SpringApplication
-            .run(SpringbootjpamustachecrudApplication.class, args);
+            .run(WebServer.class, args);
 	}
 
 }

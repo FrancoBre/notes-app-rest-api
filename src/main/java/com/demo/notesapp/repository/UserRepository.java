@@ -1,6 +1,6 @@
-package com.knf.dev.demo.springbootjpamustachecrud.repository;
+package com.demo.notesapp.repository;
 
-import com.knf.dev.demo.springbootjpamustachecrud.model.User;
+import com.demo.notesapp.model.User;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 
